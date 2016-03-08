@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CardGameAppDelegate.h
 //  Matching
 //
 //  Created by David Anglin on 3/8/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface CardGameAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

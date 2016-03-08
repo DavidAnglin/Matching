@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  Card.h
 //  Matching
 //
 //  Created by David Anglin on 3/8/16.
 //  Copyright © 2016 David Anglin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface Card : NSObject
 
 @end
-

@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlc-rx-Z50">
+                                <rect key="frame" x="178" y="160" width="245" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="agE-kn-7m4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <state key="normal" title="A♣︎" backgroundImage="cardfront">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4i-1d-iUt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDn-vH-Ub2">
+                                <rect key="frame" x="7" y="531" width="573" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aDn-vH-Ub2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="6ej-Xi-uNh"/>
+                            <constraint firstItem="aDn-vH-Ub2" firstAttribute="top" secondItem="Mlc-rx-Z50" secondAttribute="bottom" constant="92" id="9AX-5n-Mox"/>
+                            <constraint firstItem="Mlc-rx-Z50" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="Irh-4O-ivx"/>
+                            <constraint firstAttribute="bottom" secondItem="aDn-vH-Ub2" secondAttribute="bottom" constant="20" symbolic="YES" id="SQm-9L-uWq"/>
+                            <constraint firstItem="aDn-vH-Ub2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ffS-GX-2yW"/>
+                            <constraint firstItem="Mlc-rx-Z50" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="plL-DI-pU7"/>
+                            <constraint firstItem="Mlc-rx-Z50" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vKt-c6-nbX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flipsLabel" destination="aDn-vH-Ub2" id="Aak-rp-BsU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardfront" width="64" height="96"/>
+    </resources>
 </document>

@@ -1,18 +1,18 @@
 //
-//  AppDelegate.m
+//  CardGameAppDelegate.m
 //  Matching
 //
 //  Created by David Anglin on 3/8/16.
 //  Copyright © 2016 David Anglin. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CardGameAppDelegate.h"
 
-@interface AppDelegate ()
+@interface CardGameAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation CardGameAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
