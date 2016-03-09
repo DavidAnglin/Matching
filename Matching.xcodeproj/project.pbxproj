@@ -114,8 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				D7EDB0FF1C8F979700BB7FF2 /* Model */,
-				D7EDB0C91C8F7E3600BB7FF2 /* CardGameAppDelegate.h */,
-				D7EDB0CA1C8F7E3600BB7FF2 /* CardGameAppDelegate.m */,
 				D7EDB0CC1C8F7E3600BB7FF2 /* CardGameViewController.h */,
 				D7EDB0CD1C8F7E3600BB7FF2 /* CardGameViewController.m */,
 				D7EDB0CF1C8F7E3600BB7FF2 /* Main.storyboard */,
@@ -127,6 +125,8 @@
 		D7EDB0C61C8F7E3600BB7FF2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D7EDB0CA1C8F7E3600BB7FF2 /* CardGameAppDelegate.m */,
+				D7EDB0C91C8F7E3600BB7FF2 /* CardGameAppDelegate.h */,
 				D7EDB0D41C8F7E3600BB7FF2 /* LaunchScreen.storyboard */,
 				D7EDB0D21C8F7E3600BB7FF2 /* Assets.xcassets */,
 				D7EDB0D71C8F7E3600BB7FF2 /* Info.plist */,
