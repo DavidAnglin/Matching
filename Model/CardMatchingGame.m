@@ -18,17 +18,11 @@
 
 @implementation CardMatchingGame
 
-
-
 - (NSMutableArray *)cards
 {
     if (!_cards) _cards = [[NSMutableArray alloc] init];
     return _cards;
 }
-
-
-
-
 
 - (instancetype) initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
 {
@@ -43,12 +37,10 @@
                 self = nil;
                 break;
             }
-            
         }
     }
     
     return self;
-    
 }
 
 - (Card *) cardAtIndex:(NSUInteger)index

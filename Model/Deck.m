@@ -22,8 +22,6 @@
     return _cards;
 }
 
-
-
 - (void) addCard:(Card *)card atTop:(BOOL)atTop
 {
     if (atTop) {
@@ -33,7 +31,6 @@
     }
     
 }
-
 
 - (Card *)drawRandomCard
 {
@@ -52,10 +49,5 @@
 {
     [self addCard:card atTop:NO];
 }
-
-
-
-
-
 
 @end

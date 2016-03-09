@@ -22,8 +22,6 @@
 
 @implementation CardGameViewController
 
-
-
 - (CardMatchingGame *)game
 {
     if (!_game) _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
@@ -72,6 +70,5 @@
 {
     [super viewDidLoad];
 }
-
 
 @end
