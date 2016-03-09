@@ -50,6 +50,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cardButton" destination="Mlc-rx-Z50" id="01e-DQ-97Q"/>
                         <outlet property="flipsLabel" destination="aDn-vH-Ub2" id="Aak-rp-BsU"/>
                     </connections>
                 </viewController>
