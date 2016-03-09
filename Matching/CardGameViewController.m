@@ -57,7 +57,7 @@
 
 - (NSString *) titleForCard: (Card *) card
 {
-    return card.isChosen ? card.contents : @"0";
+    return card.isChosen ? card.contents : @"";
 }
 
 - (UIImage *) backgroundImageForCard: (Card *) card
