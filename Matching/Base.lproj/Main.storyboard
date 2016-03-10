@@ -18,6 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-vb-kVL">
+                                <rect key="frame" x="212" y="28" width="84" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQN-cV-91W"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5Q-Fd-bOh">
                                 <rect key="frame" x="120" y="28" width="84" height="96"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -317,16 +327,28 @@
                                     <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bet-rv-8Dg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-vb-kVL">
-                                <rect key="frame" x="212" y="28" width="84" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ze-H6-eEl">
+                                <rect key="frame" x="524" y="539" width="48" height="41"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" backgroundImage="cardback">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleShadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQN-cV-91W"/>
+                                    <action selector="dealButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnw-by-Xih"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xal-8i-UO3">
+                                <rect key="frame" x="277" y="552" width="47" height="29"/>
+                                <segments>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="changeModeSelector:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z4N-H0-Ugc"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -389,6 +411,7 @@
                             <constraint firstItem="ZfB-eK-mw3" firstAttribute="top" secondItem="JpY-7Y-iL6" secondAttribute="bottom" constant="8" id="RdR-Xr-Bog"/>
                             <constraint firstItem="jQx-Q8-6Is" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Rts-iP-S2D"/>
                             <constraint firstItem="pxH-XL-P2G" firstAttribute="height" secondItem="jQx-Q8-6Is" secondAttribute="height" id="S3J-ej-7qE"/>
+                            <constraint firstItem="Xal-8i-UO3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S64-un-Bml"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pxH-XL-P2G" secondAttribute="trailing" constant="8" id="SQs-jd-IZj"/>
                             <constraint firstItem="Ol7-vC-6Bd" firstAttribute="leading" secondItem="EQ5-nV-9FY" secondAttribute="trailing" constant="8" id="Sha-J7-AzC"/>
                             <constraint firstItem="JBo-W8-WeZ" firstAttribute="leading" secondItem="Wad-dV-y8q" secondAttribute="trailing" constant="8" id="T59-8Z-dZQ"/>
@@ -406,6 +429,7 @@
                             <constraint firstItem="UFg-1P-Tgn" firstAttribute="width" secondItem="jQx-Q8-6Is" secondAttribute="width" id="YEf-q3-h22"/>
                             <constraint firstItem="OGI-2q-rku" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="YrU-2j-K4f"/>
                             <constraint firstItem="ZfB-eK-mw3" firstAttribute="top" secondItem="z9z-Hn-w0P" secondAttribute="bottom" constant="8" id="Zcg-tC-W7f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2ze-H6-eEl" secondAttribute="trailing" constant="8" id="ZzK-h7-1Tg"/>
                             <constraint firstItem="JBo-W8-WeZ" firstAttribute="height" secondItem="jQx-Q8-6Is" secondAttribute="height" id="aM5-DW-y78"/>
                             <constraint firstAttribute="trailingMargin" secondItem="71O-Fz-t1s" secondAttribute="trailing" constant="8" id="aWa-TC-9dq"/>
                             <constraint firstItem="pxH-XL-P2G" firstAttribute="leading" secondItem="yq1-NA-u6k" secondAttribute="trailing" constant="8" id="amc-DW-A3v"/>
@@ -444,6 +468,7 @@
                             <constraint firstItem="71O-Fz-t1s" firstAttribute="top" secondItem="UFg-1P-Tgn" secondAttribute="bottom" constant="8" id="qYx-Af-6oI"/>
                             <constraint firstItem="fd7-wW-YQC" firstAttribute="height" secondItem="jQx-Q8-6Is" secondAttribute="height" id="qym-hW-7RA"/>
                             <constraint firstItem="UHH-Yb-90q" firstAttribute="width" secondItem="jQx-Q8-6Is" secondAttribute="width" id="rCd-iy-5oe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xal-8i-UO3" secondAttribute="bottom" constant="20" id="sDz-kw-X2h"/>
                             <constraint firstItem="JpY-7Y-iL6" firstAttribute="top" secondItem="JMh-7R-Q0w" secondAttribute="bottom" constant="8" id="sE5-um-UXx"/>
                             <constraint firstItem="EQ5-nV-9FY" firstAttribute="leading" secondItem="NAp-nh-Lyn" secondAttribute="trailing" constant="8" id="sME-Fc-NGR"/>
                             <constraint firstItem="71O-Fz-t1s" firstAttribute="height" secondItem="jQx-Q8-6Is" secondAttribute="height" id="sQn-mG-xYP"/>
@@ -454,6 +479,7 @@
                             <constraint firstItem="JJt-Bh-al4" firstAttribute="height" secondItem="jQx-Q8-6Is" secondAttribute="height" id="uwf-WU-0VV"/>
                             <constraint firstItem="OGI-2q-rku" firstAttribute="leading" secondItem="cIB-vb-kVL" secondAttribute="trailing" constant="8" id="vgq-ka-EfN"/>
                             <constraint firstItem="cIB-vb-kVL" firstAttribute="width" secondItem="jQx-Q8-6Is" secondAttribute="width" id="vyL-ob-URt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2ze-H6-eEl" secondAttribute="bottom" constant="20" id="w9E-fN-qhI"/>
                             <constraint firstItem="JMh-7R-Q0w" firstAttribute="leading" secondItem="K1p-Cs-JDR" secondAttribute="trailing" constant="8" id="wEP-bH-UIU"/>
                             <constraint firstItem="pxH-XL-P2G" firstAttribute="width" secondItem="jQx-Q8-6Is" secondAttribute="width" id="wFs-qh-EXP"/>
                             <constraint firstItem="NAp-nh-Lyn" firstAttribute="height" secondItem="jQx-Q8-6Is" secondAttribute="height" id="xZ5-Nq-rNG"/>
@@ -465,6 +491,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="modeSelector" destination="Xal-8i-UO3" id="31l-2H-XqG"/>
                         <outlet property="scoreLabel" destination="ZfB-eK-mw3" id="kWZ-yh-A2J"/>
                         <outletCollection property="cardButtons" destination="jQx-Q8-6Is" id="jDh-Wy-Sbu"/>
                         <outletCollection property="cardButtons" destination="D5Q-Fd-bOh" id="lvq-So-tlD"/>
